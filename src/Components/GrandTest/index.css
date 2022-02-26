@@ -1,0 +1,115 @@
+*{
+    color: #131a25;
+    font-size: 20px;
+}
+.App {
+    text-align: center;
+    border:2px solid #010916; 
+    background-color: aliceblue;
+    width:auto;
+    height: 110vh;
+    margin:10px;
+  }
+  
+  .question-card {
+   
+    margin: 0 auto;
+    width: 80%; 
+    height: auto;
+    background-color:#ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    color: white;
+    border: 2px solid #010916;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .list {
+    margin-top: 8px;
+    background-color: #28c24ea4;
+    padding: 16px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .correct{
+      border-bottom: 3px solid white;
+      color:blue;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      outline: none;
+      cursor: pointer;
+  }
+  
+  .question-text {
+    color:black;
+    font-size: 24px;
+  }
+  
+
+  
+  .final-results {
+    margin: 0 auto;
+    width: 50%; 
+    height: auto;
+    margin-top: 64px;
+    background-color:#ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  
+  button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  
+    border-radius: 24px;
+  }
+  .number{
+      width:50px;
+      height: 50px;
+      border:3px solid white;
+      font-family: "Roboto";
+      font-size: 30px;
+      background-color: rgb(223, 9, 134);
+      color:white;
+  }
+  .box-container{
+      display: flex;
+      justify-content: space-between;
+      margin :15px;
+  }
+  .header-container{
+      display: flex;
+      justify-content: space-around;
+      margin:20px;
+  }
+  .footer-button{
+      color: beige;
+    background-color: rgb(11, 214, 21);
+    border:3px solid white;
+    color: white;
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+      cursor: pointer;
+  }
+  
+  .footer-container{
+      display: flex;
+      justify-content: space-between;
+  }
