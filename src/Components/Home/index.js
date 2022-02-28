@@ -3,9 +3,9 @@ import TabItem from '../TabItem'
 
 import { BsQuestionCircle } from 'react-icons/bs'
 import { BsFillFileEarmarkDiffFill } from 'react-icons/bs'
-import { BsAlarm } from 'react-icons/bs'
+import { MdOutlineAlarmOn } from 'react-icons/md'
 import { MdEscalatorWarning } from 'react-icons/md'
-import { AiOutlineCalendar } from 'react-icons/ai'
+import { BsCalendar } from 'react-icons/bs'
 
 import './index.css'
 
@@ -35,8 +35,11 @@ class Home extends Component {
             <div className='appContainer'>
                 <div className='heading-container'>
                     <h1 className='heading'>Egnify Grand Test</h1>
-                    <p className='paragraph'><AiOutlineCalendar/>27 Nov 2020 - 10:00 am to 27 Nov 2020 - 12:00pm </p>
-                </div>
+                    <div className='date-time'>
+                        <BsCalendar className='calander'/>
+                        <p className='paragraph'> 27 Nov 2020 - 10:00 am to 27 Nov 2020 - 12:00pm </p>
+                    </div>
+                    </div>
                 <div className='Detail-view'>
                     <div className='img-direc'>
                         <div className='margin'>
@@ -48,7 +51,7 @@ class Home extends Component {
                             <p className='para-1'>90 M</p>
                         </div>
                         <div>
-                            <BsAlarm className='img'/>
+                            <MdOutlineAlarmOn className='img'/>
                             <p className='para-1'>180 min</p>
                         </div>
                     </div>
@@ -69,8 +72,9 @@ class Home extends Component {
                 </ul>
                 <hr className='line'/>
                 </div>
-                <h1 className='sub-heading'> Instructions to the Candiatates</h1>
+                
                 <ul className='order-line'>
+                    <h1 className='sub-heading'> lnstructions to the Candiatates</h1>
                     <li>1.The examination does not require using any pen,paper and calculator.</li>
                     <li>2.Every student will take the examination on a Laptop/Desktop/Smart Phone</li>
                     <li>3.On computer screen every student will be given objective type type multiple choice Question(MCQS)</li>
@@ -82,10 +86,10 @@ class Home extends Component {
                     <div>
                         <input type="checkbox" id='checkboxId'  checked={isChecked}
                                  onChange={this.handleOnChange}   />
-                        <label htmlFor='checkboxId'>I accept the Instructions</label>
+                        <label htmlFor='checkboxId' className='label-head'>I accept the Instructions</label>
                     </div>
                     
-                    <button  className={isChecked ? ' button' : 'tab-button'}> Start Test</button>
+                    <button  className={isChecked ? ' button' : 'button-nonactive'}> Start Test</button>
                 
                 </div>
             </div>

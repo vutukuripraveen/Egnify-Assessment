@@ -3,18 +3,16 @@
     font-size: 20px;
 }
 .App {
-    text-align: center;
     border:2px solid #010916; 
     background-color: aliceblue;
     width:auto;
     height: 110vh;
-    margin:10px;
+    margin:15px;
   }
   
   .question-card {
-   
     margin: 0 auto;
-    width: 80%; 
+    width: 60%; 
     height: auto;
     background-color:#ffffff;
     padding: 16px;
@@ -29,19 +27,22 @@
   
   .list {
     margin-top: 8px;
-    background-color: #28c24ea4;
+    background-color:transparent;
     padding: 16px;
     border: 3px solid white;
     border-radius: 20px;
     font-size: 20px;
   }
   .correct{
-      border-bottom: 3px solid white;
+      border-bottom: 3px solid rgb(17, 233, 222);
       color:blue;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
       rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
       outline: none;
       cursor: pointer;
+  }
+  .correct:hover {
+    border-color: rgb(21, 227, 241);
   }
   
   .question-text {
@@ -65,7 +66,7 @@
   }
   
   button {
-    background-color: red;
+    background-color: rgba(248, 76, 156, 0.493);
     border: none;
     color: white;
     padding: 16px 24px;
@@ -74,17 +75,35 @@
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-  
-    border-radius: 24px;
+    border-radius: 0px;
+  }
+  button:hover{
+    border-radius:red;
+    border: 1px;
+  }
+  .home-button{
+    background-color: red;
   }
   .number{
       width:50px;
-      height: 50px;
+      height: 35px;
       border:3px solid white;
       font-family: "Roboto";
       font-size: 30px;
-      background-color: rgb(223, 9, 134);
+      background-color: rgb(240, 73, 170);
       color:white;
+      margin-right: 10px;
+  }
+  .number-container{
+    display: flex;
+  }
+  .heading-view{
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  .label-container{
+    margin-top: 10px;
+    padding-top: 10px;
   }
   .box-container{
       display: flex;
@@ -93,12 +112,24 @@
   }
   .header-container{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       margin:20px;
+      padding: 10px;
   }
+  .container-heaing{
+    color:black;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .label-box{
+    color: #010916;
+    font-size: 20px;
+    font-family: "Roboto";
+  }
+  
   .footer-button{
-      color: beige;
-    background-color: rgb(11, 214, 21);
+    color: beige;
+    background-color:rgb(38, 187, 233);
     border:3px solid white;
     color: white;
     padding: 16px 24px;
@@ -106,10 +137,62 @@
     font-size: 16px;
     font-weight: bold;
     outline: none;
-      cursor: pointer;
+    cursor: pointer;
   }
   
   .footer-container{
       display: flex;
       justify-content: space-between;
+  }
+  .Question-container{
+    text-align: start;
+    margin: 15px;
+    width:90%;
+  }
+  .final-heading{
+    color: rgba(27, 13, 228, 0.541);
+    font-size: 30px;
+  }
+  .score-container{
+    border: 4px solid rgb(4, 199, 233);
+    border-radius: 60px;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+  .score-heading{
+    padding: 20px;
+  }
+  .score-span{
+    color: green;
+  }
+  .neg-span{
+    color: rgb(152, 32, 233);
+  }
+  .span-ques{
+    color: aqua;
+  }
+  .result-conatiner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .mark-para{
+    color: rgb(233, 70, 146);
+    font-family: "Roboto";
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .total-ques{
+    color: blue;
+  }
+  .para-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error-image{
+    margin-left:220px ;
   }
